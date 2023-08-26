@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./src/pdf.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerador de Etiqueta</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.56/pdfmake.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.56/vfs_fonts.js"></script>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body>
+  <main>
+    <figure>
+      <img src="https://makedistribuidora.com.br/wp-content/uploads/2023/01/logo_make_distribuidora_grande.png" alt="">
+    </figure>
+    <h2>Gerador de Etiqueta LP42</h2>
+    <section>
+      <div class="labesl">
+        <label for="nf">Nota Fiscal: </label>
+        <label for="vc">Venda casada: </label>
+        <label for="origem">Origem: </label>
+        <label for="destino">Destino: </label>
+      </div>
+      <form class="inputs" onsubmit="event.preventDefault(); return downloadPdf()">
+        <input type="number" id="nf" value="5689" required />
+        <input type="text" id="vc" value="999" />
+        <input type="text" id="origem" value="1001" />
+        <input type="text" id="destino" value="3001" list="search-options" />
+        <div class="btn">
+          <input type="submit" value="Gerar Etiqueta" />
+          <img src="./src/pdf.png" alt="" />
+        </div>
+      </form>
+
+      <datalist id="search-options">
+        <option value="3001"></option>
+        <option value="1001"></option>
+        <option value="RMA"></option>
+      </datalist>
+    </section>
+  </main>
+  <footer>
+    <p>
+      Developed by
+      <a href="https://geraldox.com/" target="_blank">gmapdev</a> &copy; 2023
+      <a href="https://github.com/geraldotech">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="./src/js/index.js"></script>
+</body>
+
+</html>
