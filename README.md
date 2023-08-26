@@ -28,3 +28,4 @@ gerando um template em pdf para impressora L42
 
 - JavaScript App Web
   apenas abrir o `index.html` dentro da pasta `FrontVersion`
+  - [https://geraldotech.github.io/Gerador-Etiquetas-Make/FrontVersion](https://geraldotech.github.io/Gerador-Etiquetas-Make/FrontVersion)
