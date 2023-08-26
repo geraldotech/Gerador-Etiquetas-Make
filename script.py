@@ -1,8 +1,6 @@
 from docx import Document
 from docx.shared import Pt
 
-
-
 documento = Document("ETIQUETA.docx")
 
 nf = input('Nota fiscal:')
